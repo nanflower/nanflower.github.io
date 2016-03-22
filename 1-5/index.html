@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>零基础HTML编码</title>
+	<style type="text/css">
+		/*整体页面*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: #fff5ee;
+		}
+		/*导航栏*/
+		#topt {	
+			display: block;		
+			background: #333333;
+			overflow: hidden;
+			width: 100%;
+		}
+		#topt img {
+			padding: 15px 30px;
+			float: left;
+		}
+		#topt ul {
+			float: right;
+			margin: 0 auto;
+		}
+		#topt li {
+			padding: 20px 20px 25px 0px;
+			margin: 0 auto;
+			color: black;
+			float: left;
+		}
+		#topt a {
+			font-size: 10px;
+			text-decoration: none;
+			color: white;
+		}
+		#topt a.link4 {
+			color: #666666;
+		}
+		/*盒子模型*/
+		.box {
+			margin: 20px;
+			border: 1px solid #ccc;
+			padding: 30px 20px;
+			background: white;
+			box-shadow: 2px 2px 0px #666;
+			font-family: "Microsoft YaHei";
+			overflow: hidden;
+		}
+		.box h2 {
+			padding: 15px 0px;
+		}
+		.box h3 {
+			padding: 10px 0px;
+			color: #666;
+		}
+		.box p {
+			text-indent: 2em;
+			padding: 10px 0px;
+			line-height: 1.5;
+		}
+		.box p.author {
+			text-indent: 0em;
+			padding: 5px 0px;
+			font-size: 15px;
+			color: #cdc0b0;
+		}
+		.box a {
+			color: blue;
+		}
+		/*图片*/
+		.box img {
+			padding: 5px 0px;
+		}
+		.box ul {
+			text-indent: 2em;
+		}
+		.box ol {
+			padding: 10px 40px;
+		}
+		.box li {
+			list-style: none;
+			line-height: 1.5;
+		}
+		.box li.rank {
+			list-style: decimal;
+		}
+		/*表格*/
+		.box figure {
+			font-size: 12px;
+			text-align: center;
+			margin: 5px 30px;
+			border: 1px solid #ccc;
+			padding: 10px 0px;
+			width: 120px;
+			height: 100px;
+			float: left;
+		}
+		.box table {
+			width: 100%;
+			border-width: 1px;
+			border-color: #333;
+			border-collapse: collapse;
+		}
+		.box th {
+			text-align: left;
+			background: black;
+			color: white;
+			padding: 2px 5px;
+			border:1px solid #adadad;
+		}
+		.box td {
+			padding: 2px 5px;
+			border:1px solid #adadad;
+		}
+		.bottomtd{
+			background: #adadad;
+			font-weight: bold;
+		}
+		.leftp {
+			margin: 0 480px 0 0;
+		}
+		/*侧边栏*/
+		.bottomlable {
+			float :right;
+			width: 400px;
+			padding-bottom: 10px;
+		}
+		.bottomlable h3 {
+			border-left: 3px solid #adadad;
+			padding-left: 10px;
+			color: black;
+		}
+		label {
+			float: left;
+			text-align: right;
+			width: 40%;
+		}
+		.comment1 {
+			color: #adadad;
+			font-size: 10px;
+			width: 83%; 
+			text-align: right; 
+		}
+		.comment2 {
+			color: #adadad;
+			font-size: 10px;
+			width: 80%; 
+			text-align: right; 
+		}
+		form .placeholder{
+			font-size: 15px;
+			font-weight: bold;
+		}
+		textarea {
+			width: 40%;
+			height: 100px;
+			font-size: 15px;
+			font-weight: bold;
+		}
+		#confirmsubmit input {
+			height: 40px;
+			width: 88%;
+			font-size: 20px;
+			background-color: #1c63dd;
+			color: white;
+			border-radius: 5px;
+			border: 0;
+		}
+		/*底部栏*/
+		footer {
+			width: 100%;	
+			display: block;		
+			background: #333333;
+			color: white;
+			font-size: 10px;
+			overflow: hidden;
+			text-align: center;
+			padding: 10px 0px 40px 0px;
+
+		}
+		footer span {
+			position:relative;
+			font-size: 20px;
+			top: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div id="topt">
+		<img src="../images/baidu-logo.png" alt="baidulogo" />
+		<ul>
+			<li><a href="#">导航链接一</a></li>
+			<li><a href="#">导航链接二</a></li>
+			<li><a href="#">导航链接三</a></li>
+			<li><a href="#" class="link4">导航链接四</a></li>
+		</ul>
+	</div>
+	<div class="box bottomlable">
+		<h3>这里以后是一个侧栏，这是侧栏的标题</h3>
+		<form action="">
+			<p>
+				<label>请输入邮箱地址：</label>
+				<input type="text" name="mailbox" placeholder="这是一个文本输入框" ></input>
+				<p class="comment1">邮箱地址请按要求格式输入</p>
+			</p>
+			<p>
+				<label>请输入密码：</label>
+				<input type="password" value="123456789" ></input><br />
+			</p>
+			<p>
+				<label>请重复输入密码：</label>
+				<input type="password" value="123456789" ></input>
+				<p class="comment2">密码请为6-16位英文数字</p> 
+			</p>
+			<p>
+				<label>性别：</label>
+				<input type="radio" name="sex" value="man" checked="checked" >男</input>
+				<input type="radio" name="sex" value="woman" >女</input>
+			</p>
+			<p>
+				<label>城市：</label>
+				<select name="city">
+					<option value="beijing">北京</option>
+					<option value="shanghai">上海</option>
+					<option value="guangzhou">广州</option>
+				</select>
+			</p>
+			<p>
+				<label>爱好：</label>
+				<input type="checkbox" name="hobby" value="sport">运动</input>
+				<input type="checkbox" name="hobby" value="art">艺术</input>
+				<input type="checkbox" name="hobby" value="science">科学</input>
+			</p>
+			<p>
+				<label>个人描述：</label>
+				<textarea name="description" >这是一个多行输入框，输入您的个人描述</textarea>
+			</p>
+			<p id="confirmsubmit">
+				<input type="submit" name="subscribe" value="确认提交"></input>
+			</p>
+		</form>
+	</div>
+	<div class="leftp">
+	<div class="box">
+		<header>
+			<h2>文章一级标题</h2>
+			<h3>文章二级标题</h3>
+		</header>
+		<p class="author"><span>文章作者</span>&nbsp;<time>文章发表时间</time></p>
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+		<img src="../images/coffee.jpg" alt="a cup of coffee" title="a cup of coffee" width="400" height="300" />
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落,换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接点开后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落,这是一个很长很长的段落。</p>
+	</div>
+	<div class="box">
+		<header>
+			<h2>另一篇文章一级标题</h2>
+			<h3>文章二级标题</h3>
+		</header>
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+		<img src="../images/coffee.jpg" alt="a cup of coffee" title="a cup of coffee" width="400" height="300" />
+		<ul>
+			<li>列表项目一</li>
+			<li>列表项目二</li>
+			<li>列表项目三</li>
+		</ul>
+	</div>
+	<div class="box">
+		<h2>图片</h2>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="../images/coffee.jpg" alt="a cup of coffee" title="a cup of coffee" width="100" height="80" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="../images/coffee.jpg" alt="a cup of coffee" title="a cup of coffee" width="100" height="80" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="../images/coffee.jpg" alt="a cup of coffee" title="a cup of coffee" width="100" height="80" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="../images/coffee.jpg" alt="a cup of coffee" title="a cup of coffee" width="100" height="80" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="../images/coffee.jpg" alt="a cup of coffee" title="a cup of coffee" width="100" height="80" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="../images/coffee.jpg" alt="a cup of coffee" title="a cup of coffee" width="100" height="80" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="../images/coffee.jpg" alt="a cup of coffee" title="a cup of coffee" width="100" height="80" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="../images/coffee.jpg" alt="a cup of coffee" title="a cup of coffee" width="100" height="80" />
+		</figure>
+		<figure>
+			<figcaption>好看的图片</figcaption>
+			<img src="../images/coffee.jpg" alt="a cup of coffee" title="a cup of coffee" width="100" height="80" />
+		</figure>
+		<figure>	
+			<figcaption>好看的图片</figcaption>
+			<img src="../images/coffee.jpg" alt="a cup of coffee" title="a cup of coffee" width="100" height="80" />
+		</figure>
+	</div>
+	<div class="box">
+		<header>
+			<h2>最后一篇文章一级标题</h2>
+			<h3>文章二级标题</h3>
+		</header>
+		<p class="author"><span>文章作者</span>&nbsp;<time>文章发表时间</time></p>
+		<ol>
+			<li class="rank">排名1</li>
+			<li class="rank">排名2</li>
+			<li class="rank">排名3</li>
+		</ol>
+		<p>
+			<figcaption>下面是一个表格，给表格加了一个border＝"1"好让你看出是一个表格</figcaption>
+			<table>
+				<tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="">操作</a></td>
+				</tr>
+				<tr>
+					<td class="bottomtd">总计</td>
+					<td colspan="2" class="bottomtd">1000</td>
+				</tr>
+			</table>
+	</p>
+	</div>
+	</div>
+	<footer>
+	<p>版权所有<span>&copy;</span></p>
+	</footer>
+</body>
+</html>
