@@ -1,0 +1,482 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>任务六</title>
+	<style type="text/css">
+		body {
+			background: #666;
+		}
+		.box {
+			width: 980px;
+			height: 1386px;
+			background: white;
+			position: relative;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+		#topline {
+			width: 892px;
+			height: 61px;
+			margin-left: 44px;
+			border-bottom: 2px solid #938e8c;
+		}
+		.topleftimg {
+			width: 110px;
+			height: 61px;
+			background-color: #d45d5c;
+		}
+		#topleft {
+			font-size: 12px;
+			color: #fff;
+			position: relative;
+			left: 10px;
+			top: 45px;
+			font-family: "SimHei";
+		}
+		#topright {
+			float: right;
+			position: relative;
+			top: 35px;
+			font-size: 12px;
+			color: #d45d5c;
+			font-family: "SimHei";
+		}
+		#first {
+			margin-top: 50px;
+			margin-left: 44px;
+		}
+		#color1 {
+			background-color: #97b99b;
+			width: 191px;
+			height: 301px;
+			position: absolute;
+			opacity: 0.5;
+			top: 113px;
+		}
+		#color2 {
+			 background-color: #e5b7b7;
+			 width: 191px;
+			 height: 301px;
+			 position: absolute;
+			 opacity: 0.5;
+			 top: 113px;
+			 left: 494px;
+		}
+		#firstp {
+			border-top: 2px solid #cc8091;
+			width: 203px;
+			position: absolute;
+			right: 44px;
+			top: 113px;
+		}
+		#firstp h2 {
+			margin-top: 5px;
+			margin-bottom: 5px;
+			font-size: 24px;
+			color: #000;
+			font-family: "Microsoft YaHei";
+			text-decoration: underline;
+		}
+		#firstp h2:first-letter{
+			font-size: 28px;
+		}
+		#fpp1 {
+			font-size: 12px;
+			color: #676767;
+			font-weight: "KaiTi";
+		}
+		#fpp2 {
+			margin: 0px;
+			font-size: 116px;
+			color: #75b86b;
+			font-family: "Microsoft YaHei";
+			font-style: italic;
+		}
+		#fpp3 {
+			font-size: 55px;
+			color: #cc8091;
+			font-family: "Microsoft YaHei";
+			margin: 0px;
+			margin-left: 10px;
+		}
+		#fpp4 {
+			position: absolute;
+			font-size: 21px;
+			color: #cc8091;
+			font-family: "Microsoft YaHei";
+			left: 90px;
+			top: 215px;
+		}
+		#fpp5 {
+			position: absolute;
+			font-size: 12px;
+			color: #cc8091;
+			font-family: "Microsoft YaHei";
+			left: 90px;
+			top: 250px;
+		}
+		#second {
+			margin-top: 60px;
+			margin-bottom: 16px;
+		}
+		#sp1 {
+			width: 210px;
+		}
+		#spp1 {
+			font-size: 16px;
+			color: #418c59;
+			font-family: "Microsoft YaHei";
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		#spp2 {
+			font-size: 12px;
+			color: #767777;
+			font-family: "SimSun";
+		}
+		#sp2 {
+			position: absolute;
+			top: 458px;
+			left: 280px;
+			width: 210px;
+
+		}
+		#spp3 {
+			font-size: 16px;
+			color: #d2994f;
+			font-family: "Microsoft YaHei";
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		.spp4 {
+			font-size: 12px;
+			color: #231815;
+			font-family: "Microsoft YaHei";
+			opacity: 0.7;
+			margin-bottom: 5px;
+			margin-top: 10px;
+		}
+		#sp3 {
+			position: absolute;
+			top: 458px;
+			left: 520px;
+			width: 150px;
+		}
+		#spp5 {
+			font-size: 16px;
+			color: #cc7680;
+			font-family: "Microsoft YaHei";
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		.spp4 span {
+			font-size: 12px;
+			color: #cd4a48;
+			font-family: "Microsoft YaHei";
+			font-style: italic;
+			opacity: 0.7;
+		}
+		#third {
+			margin-top: 60px;
+			margin-bottom: 16px;
+		}
+		#tp1 {
+			width: 415px;
+		}
+		#tp1x {
+			border-bottom: 2px solid #11456b;
+		}
+		#tpp1 {
+			font-size: 42px;
+			color: #11456b;
+			font-family: "SimHei";
+			font-weight: bold;
+			margin-bottom: 0px;
+		}
+		#tpp1 span{
+			font-size: 72px;
+			color: #f5e327;
+			font-family: "SimHei";
+			font-weight: bold;
+			font-style: italic;
+		}
+		#tpp2 {
+			font-size: 33px;
+			color: #11456b;
+			font-family: "SimHei";
+			font-weight: bold;
+			margin-top: 5px;
+			margin-bottom: 10px;
+
+		}
+		#tpp3 {
+			font-size: 12px;
+			color: #767777;
+			font-family: "SimSun";
+			margin-bottom: 0;
+		}
+		#tpp3:first-letter {
+			font-size: 70px;
+			color: #f5e327;
+			font-family: "Microsoft YaHei";
+			float: left;
+		}
+		#tpp3 img {
+			float: right;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+		#tpp4 {
+			text-indent: 2em;
+			font-size: 12px;
+			color: #767777;
+			font-family: "SimSun";
+			margin: 0;
+		}
+		#tp2 {
+			position: absolute;
+			right: 44px;
+			top: 680px;
+		}
+		#tpp5 {
+			background-color: #343232;
+			width: 458px;
+			height: 61px;
+			position: absolute;
+			opacity: 0.5;
+			top: 214px;
+		}
+		#tpp5 p {
+			line-height: 44px;
+			font-size: 26px;
+			color: #fff;
+			font-family: "Microsoft YaHei";
+			margin-top: 8px;
+			margin-left: 30px;
+			border-left: 3px solid #72b16a;
+			padding-left: 10px;
+		}
+		#tpp5 span {
+			font-size: 12px;
+			color: #72b16a;
+			font-family: "Microsoft YaHei";
+			font-style: italic;
+			letter-spacing: 140%；
+		}
+		#tp3x {
+			background-color: #eeedd6;
+			width: 459px;
+			height: 318px;
+			margin-top: 30px;
+		}
+		#tpp6 ul {
+			padding-top: 20px;
+		}
+		#tpp6 li {
+			margin-top: 20px;
+			font-size: 16px;
+			color: #5a5b5b;
+			font-family: "SimSun";
+			list-style-type: none;
+			text-align: left;
+		}
+		#tpp6 em {
+			display: block;
+			font-family: "SimSun";
+			border:4px solid;
+			border-color: #eeedd6 #eeedd6 #000 #eeedd6;
+			float: left;
+			margin-top: 2px;
+			margin-right: 5px;
+		}
+		#tpp6 span {
+			font-size: 12px;
+			color: #5a5b5b;
+			font-family: "SimSun";
+			font-style: italic;
+			text-align: right;
+
+		}
+		#tpp7 {
+			background-color: #d45d5c;
+			position: absolute;
+			width: 260px;
+			height: 160px;
+			bottom: 0;
+		}
+		#tpp8 {
+			margin-top: 30px;
+			margin-left: 5px;
+			font-size: 110px;
+			color: #fff;
+			font-family: "Microsoft YaHei";
+		}
+		#tpp9 {
+			height: 86px;
+			border-left: 2px solid #fff;
+			position: absolute;
+			top: 20px;
+			left: 70px;
+		}
+		#tpp10 {
+			position: absolute;
+			top: 23px;
+			left: 83px;
+			font-size: 21px;
+			color: #fff;
+			font-family: "SimHei";
+			font-style: italic;
+
+		}
+		#tpp11 {
+			position: absolute;
+			top: 80px;
+			left: 83px;
+			font-size: 12px;
+			color: #fff;
+			font-family: "SimHei";
+			margin-bottom: 6px;
+		}
+		#last {
+			position: absolute;
+			height: 160px;
+			right: 15px;
+			top: 460px;
+			width: 160px;
+		}
+		#last p {
+			font-size: 14px;
+			color: #5a5b5b;
+			font-family: "SimHei";
+			font-style: italic;
+			margin-bottom: 16px;
+		}
+		#last1{
+			float: left;
+			font-size: 72px;
+			color: #d45d5c;
+			font-family: "SimHei";
+			font-style: normal;
+			margin: -18px 10px 0 -40px;
+			height: 30px;
+		}
+		#last2 {
+			float: right;
+			font-size: 72px;
+			color: #d45d5c;
+			font-family: "SimHei";
+			font-style: normal;
+			height: 30px;
+		}
+		#bottomline {
+			width: 892px;
+			height: 61px;
+			border-top: 1px solid #938e8c;
+		}
+		#bottomline p {
+			float: right;
+			color: #d45d5c;
+			font-size: 12px;
+			font-family: "SimHei";
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div id="topline">
+			<p id="topright">
+				2016.03
+			</p>
+			<div class="topleftimg">
+				<p id="topleft">
+					ife.baidu.com
+				</p>
+			</div>
+		</div>
+		<div id="first">
+			<img src="../images/budapeisi.jpg" alt="布达佩斯" width="641" height="301" >
+			<div id="color1">
+			</div>
+			<div id="color2">
+			</div>
+			<div id="firstp">
+			<div id="titlep">
+
+				<h2>ABOUT</h2>
+				<h2>TECHNOLOGY</h2>
+				<p id="fpp1">About technology about technology about technology</p>
+				<p id="fpp2">700</p>
+				<p id="fpp3">3.2</p>
+				<p id="fpp4">CSS</p>
+				<p id="fpp5">CSSSSSCSSSSCSS</p>
+			</div>
+		</div>
+		<div id="second">
+			<div id="sp1">
+				<p id="spp1">What</p>
+				<p id="spp2">端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前</p>
+			</div>
+			<div id="sp2">
+				<p id="spp3">When</p>
+				<p class="spp4">端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前</p>
+			</div>
+			<div id="sp3">
+				<p id="spp5">How</p>
+				<p class="spp4">端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+				<p class="spp4">What-------<span>40%</span></p>
+				<p class="spp4">What-------<span>30%</span></p>
+				<p class="spp4">What-------<span>30%</span></p>
+			</div>
+		</div>
+		<div id="third">
+			<div id="tp1">
+				<div id="tp1x">
+					<p id="tpp1"><span>THE</span> TECHOLOGE OF FRONT</p>
+					<p id="tpp2">前端技术领域</p>
+				</div>
+				<div id="tp2x">
+					<p id="tpp3">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端<img src="../images/budapeisi2.jpg" alt="budapeisi" width="220" height="320" />前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前。
+					<p id="tpp4">端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前</p>
+					<p id="tpp4">前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+					</p>
+				</div>
+			</div>
+			<div id="tp2">
+				<img src="../images/budapeisi1.jpg" alt="budapeisi" width="458" height="275" />
+				<div id="tpp5">
+					<p>前端技术 <span>前端技术前端技术</span></p>
+				</div>
+				<div id="tp3x">
+					<div id="tpp6">
+						<ul>
+							<li><em></em>前端前端前端前端前端前端 ....................................<span>前端</span></li>
+							<li><em></em>前端前端前端前端 ...............................................<span>前端前</span></li>
+							<li><em></em>前端前端前端前端前端前端前端 ............................<span>前端</span></li>
+						</ul>
+						<div id="tpp7">
+							<p id="tpp8">0</p>
+							<p id="tpp9"></p>
+							<p id="tpp10">ONE TWO<br />THREE FOUR FIVE</p>
+							<p id="tpp11">hello world hello world <br />hello world</p>
+						</div>
+						<div id="last">
+							<p><div id="last1">“</div>world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world<div id="last2">”</div></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bottomline">
+			<p>
+				ife.baidu.com
+			</p>
+		</div>
+		
+	</div>
+</body>
+</html>
