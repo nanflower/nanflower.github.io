@@ -8,7 +8,7 @@ body{
 }
 .main{
   width: 980px;
-  height: 1500px;
+  height: 2050px;
   margin: 0 auto;
   background: #fff;
 }
@@ -43,12 +43,12 @@ body{
 .middle_left{
   position: relative;
   float: left;
+  margin-top: 25px;
 }
 .middle_right{
   position: relative;
   float: right;
   width: 360px;
-  height: 300px;
   background: #fff;
 }
 .middle_right hr{
@@ -76,6 +76,7 @@ body{
   font-size: 12px;
   font-family: "微软雅黑";
   line-height: 14px;
+  text-indent: 2em;
 }
 /*.seven{
   font-size: 116px;
@@ -242,6 +243,9 @@ li{
   font-size: 35px;
   color: #bd49a8;
 }
+.front_end {
+  color: #0117fc;
+}
 .left_bottom{
   padding: 10px 0px;
 	margin-top: 20px;
@@ -264,6 +268,24 @@ li{
 .le_text p{
   clear: both;
   text-indent: 0em;
+  font-size: 12px;
+  color:#767777;
+  font-family: "宋体";
+  line-height: 16px;
+  text-indent: 2em;
+}
+.le_text img {
+  float: right;
+}
+.base_text {
+  font-size: 12px;
+  color:#767777;
+  font-family: "宋体";
+  line-height: 16px;
+  text-indent: 2em;
+}
+.base_text img {
+  float: left;
 }
 .pic_2{
   float: right;
@@ -299,16 +321,12 @@ li{
   text-indent: 0.5em;
 }
 .rim_text p span{
-  font-size: 12px;
-  color: #72b16a;
-  font-family: "微软雅黑";
-  font-style: oblique;
-  line-height: 140%;
-  margin-left: 5px;
+  font-size: 35px;
+  color: #faf602;
 }
 .r_text{
   width: 458px;
-  height: 318px;
+  height: 400px;
   background: #eeeed6;
   margin-top: 18px;
   position: relative;
@@ -317,7 +335,7 @@ li{
   list-style-image: url("../img/triangle.png");
 }
 .r_text_1 ul li{
-  font-size: 16px;
+  font-size: 12px;
   color: #5a5b5b;
   font-family: "宋体";
   text-align: left;
