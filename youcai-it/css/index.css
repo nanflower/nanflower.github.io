@@ -8,7 +8,7 @@ body{
 }
 .main{
   width: 980px;
-  height: 2050px;
+  height: 2150px;
   margin: 0 auto;
   background: #fff;
 }
@@ -30,6 +30,11 @@ body{
   float: left;
   margin-top: 20px;
   margin-left: 4px;
+}
+.mid_txt {
+  position: absolute;
+  right: 50%;
+  top: 45px;
 }
 .top_time{
   float:right;
@@ -232,13 +237,6 @@ li{
   font-weight: bold;
 	font-style: oblique;
 }
-.left_up p{
-  font-size: 30px;
-	line-height: 50px;
-	font-family: "黑体";
-	color: #11456b;
-	font-weight:bold;
-}
 .left_up span {
   font-size: 35px;
   color: #bd49a8;
@@ -249,6 +247,7 @@ li{
 .left_bottom{
   padding: 10px 0px;
 	margin-top: 20px;
+  margin-bottom: 50px;
 	position: relative;
 }
 .left_bottom p{
@@ -328,6 +327,7 @@ li{
   width: 458px;
   height: 400px;
   margin-top: 18px;
+  margin-bottom: 40px;
   position: relative;
 }
 .r_text_1 ul{
@@ -419,6 +419,28 @@ li{
   bottom: 45px;
   right: 0px;
   font-style: normal;
+}
+.editor {
+  float: right;
+  font-size: 8px;
+  color: #fb0701;
+  font-family: "楷体";
+  margin: 5px 0px; 
+}
+#editort {
+  float: right;
+  font-size: 8px;
+  color: #fb0701;
+  font-family: "楷体";
+  margin: 5px 25px;
+  font-weight: bold; 
+}
+.ltitle {
+  font-size: 30px;
+  line-height: 50px;
+  font-family: "黑体";
+  color: #11456b;
+  font-weight:bold;
 }
 footer{
   clear: both;
