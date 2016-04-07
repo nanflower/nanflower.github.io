@@ -449,8 +449,10 @@ footer{
   height: 59px;
   border-top: 1px solid #938e8c;
 }
-footer p{
+#rbottom{
   float: right;
+}
+footer p{
   font: 12px "黑体";
   color: #d45d5c;
 }
