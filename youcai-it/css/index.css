@@ -8,7 +8,7 @@ body{
 }
 .main{
   width: 980px;
-  height: 2150px;
+  height: 2400px;
   margin: 0 auto;
   background: #fff;
 }
@@ -48,7 +48,7 @@ body{
 .middle_left{
   position: relative;
   float: left;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 .middle_right{
   position: relative;
