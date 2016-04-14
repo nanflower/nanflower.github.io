@@ -241,8 +241,8 @@ header #title {
   height: 100%;
 }
 #backtxt {
-  position: absolute;
-  top: 40rem;
+  position: relative;
+  top: -8rem;
   left: 5rem;
   font-size: 45px;
   color: #fff;
