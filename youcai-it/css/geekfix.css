@@ -142,13 +142,10 @@ header #title {
   height: 45%;
   display: block;
   background-color: #F8F8F8;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
   white-space: pre;
   color: #4B4B4B;
-}
-.module .module_content li div #text1 {
-  font-size: 10rem;
 }
 .module .module_content li div::before {
   content: '';
@@ -187,4 +184,12 @@ header #title {
   font-size: 30px;
   color: #e5e5e5;
   border-left: 1px solid #e5e5e5;
+}
+.text1 p{
+  margin-top: -2rem;
+  font-size: 1.1rem;
+}
+.text1 span {
+  padding-left: 1.2rem;
+  border-left: 1px solid #000;
 }
