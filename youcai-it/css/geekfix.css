@@ -80,8 +80,8 @@ header #title {
 }
 #sub ul li img {
   display: inline-block;
-  width: 60%;
-  height: auto;
+  width: 200px;
+  height: 180px;
 }
 #sub ul li h2,
 #sub ul li h3 {
@@ -142,10 +142,13 @@ header #title {
   height: 45%;
   display: block;
   background-color: #F8F8F8;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   text-align: center;
   white-space: pre;
   color: #4B4B4B;
+}
+.module .module_content li div #text1 {
+  font-size: 10rem;
 }
 .module .module_content li div::before {
   content: '';
@@ -170,80 +173,11 @@ header #title {
   width: 100%;
   height: 100%;
 }
-#article {
-  width: 100%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  position: relative;
-  margin-bottom: 2rem;
-}
-#article .art_item {
-  position: relative;
-  padding: 1rem;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-}
-#article .art_item:not(:last-child) {
-  border-bottom: 2px solid #F2F2F2;
-}
-#article .art_item img {
-  height: 7rem;
-  width: auto;
-}
-#article .art_item aside {
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0 1rem;
-  width: 100%;
-}
-#article .art_item aside h3 {
-  font-size: 1.6rem;
-  color: #646464;
-  font-weight: normal;
-}
-#article .art_item aside time {
-  color: #CACACA;
-  font-size: 1.2rem;
-}
-#article .art_item aside .img_group {
-  width: 100%;
-  margin: 1rem 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-#article .art_item aside .img_group img {
-  width: 32%;
-  height: 100%;
-}
 #backtxt {
   position: relative;
   top: -8rem;
   left: 5rem;
+  width: 60rem;
   font-size: 45px;
   color: #fff;
 }
