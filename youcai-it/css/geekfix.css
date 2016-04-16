@@ -172,7 +172,7 @@ header #title {
   list-style: none;
 }
 .module .module_content li {
-  width: 65%;
+  width: 70%;
   height: 8rem;
   overflow: hidden;
   margin-bottom: 0.5rem;
@@ -203,7 +203,7 @@ header #title {
   flex-shrink: 0;
   height: 8rem;
   width: 8rem;
-  padding-left: 9rem;
+  padding-left: 8rem;
 }
 .module .module_content .head_img img {
   width: 100%;
