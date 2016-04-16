@@ -208,9 +208,11 @@ header #title {
   border-left: 1px solid #000;
 }
 footer {
-  text-align: center;
+  width: 20rem;
   margin-bottom: 2rem;
 }
 footer p{
+  position: relative;
+  left: 32rem;
   font-size: 0.9rem;
 }
