@@ -154,7 +154,7 @@ header #title {
 .module {
   padding: 0 1.5rem;
   overflow: hidden;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 .module h2 {
   padding: 2rem 1rem;
@@ -232,4 +232,15 @@ header #title {
 .text1 span {
   padding-left: 1.2rem;
   border-left: 1px solid #000;
+}
+footer {
+  height: 4rem;
+}
+#mbottom {
+  text-align: center;
+
+}
+#rbottom {
+  float: right;
+  font-size: 0.8rem;
 }
