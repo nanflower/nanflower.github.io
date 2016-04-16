@@ -2,6 +2,19 @@
   margin: 0;
   padding: 0;
 }
+a { 
+  text-decoration:none;
+}
+a:hover { 
+  text-decoration:none;
+}
+a:active {
+  text-decoration: none;
+}
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
 html {
   font-family: "微软雅黑";
 }
@@ -192,4 +205,11 @@ header #title {
 .text1 span {
   padding-left: 1.2rem;
   border-left: 1px solid #000;
+}
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+footer p{
+  font-size: 0.9rem;
 }
