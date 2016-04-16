@@ -66,18 +66,7 @@ header #title {
   margin-bottom: 2.5rem;
 }
 #sub ul {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
   list-style: none;
   word-spacing: -0.5em;
   vertical-align: bottom;
@@ -119,29 +108,13 @@ header #title {
   color: #ECECEC;
 }
 .module .module_content {
+  display: flex;
+  display: -webkit-box;
   margin: 1rem 0;
   list-style: none;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 .module .module_content li {
   width: 50%;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   height: 8rem;
   overflow: hidden;
   margin-bottom: 0.5rem;
@@ -169,16 +142,14 @@ header #title {
   vertical-align: middle;
 }
 .module .module_content .head_img {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   height: 8rem;
   width: 8rem;
   border: 1px #FFB832 solid;
-  margin-left: 6rem;
+  margin-left: 13rem;
 }
 .module .module_content .head_text {
-  margin-right: 6rem;
+  margin-right: 2rem;
 }
 .module .module_content .head_img img {
   width: 100%;
