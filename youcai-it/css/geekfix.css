@@ -64,10 +64,22 @@ header #title {
   width: 100%;
   position: relative;
   margin-bottom: 2.5rem;
+
 }
-#sub ul {
+#sub ul {      
+  display: -webkit-flex;     
   display: flex;
-  display: -webkit-box;
+  -webkit-align-items: center;
+  align-items: center;
+  /* for uc */
+  display: -webkit-box;  
+  -webkit-box-align: center;
+  -webkit-flex: 1;          
+  flex: 1;         
+  /* for uc */
+  -webkit-box-flex: 1;      
+  -moz-box-flex: 1;         
+  -ms-flex: 1; 
   list-style: none;
   word-spacing: -0.5em;
   vertical-align: bottom;
@@ -100,8 +112,19 @@ header #title {
   margin-bottom: 2.5rem;
 }
 #sub1 ul {
+  display: -webkit-flex;     
   display: flex;
-  display: -webkit-box;
+  -webkit-align-items: center;
+  align-items: center;
+  /* for uc */
+  display: -webkit-box;  
+  -webkit-box-align: center;
+  -webkit-flex: 1;          
+  flex: 1;         
+  /* for uc */
+  -webkit-box-flex: 1;      
+  -moz-box-flex: 1;         
+  -ms-flex: 1; 
   list-style: none;
   word-spacing: -0.5em;
   vertical-align: bottom;
