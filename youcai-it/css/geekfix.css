@@ -157,7 +157,7 @@ header #title {
   margin-bottom: 2.5rem;
 }
 .module h2 {
-  padding: 0.5rem 1rem;
+  padding: 2rem 1rem;
   color: #666666;
   font-weight: bold;
   font-size: 1.5rem;
@@ -214,7 +214,7 @@ header #title {
   position: relative;
   top: -8rem;
   left: 5rem;
-  width: 60rem;
+  width: 50rem;
   font-size: 45px;
   color: #fff;
 }
