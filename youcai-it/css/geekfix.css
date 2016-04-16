@@ -67,6 +67,7 @@ header #title {
 }
 #sub ul {
   display: flex;
+  display: -webkit-box;
   list-style: none;
   word-spacing: -0.5em;
   vertical-align: bottom;
@@ -74,7 +75,7 @@ header #title {
 #sub ul li {
   word-spacing: 0;
   margin: 20px 0;
-  width: 33.3%;
+  width: 25%;
   text-align: center;
   vertical-align: bottom;
 }
@@ -91,6 +92,40 @@ header #title {
   font-size: 1.2rem;
 }
 #sub ul li h3 {
+  color: #5B5B5B;
+}
+#sub1 {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+#sub1 ul {
+  display: flex;
+  display: -webkit-box;
+  list-style: none;
+  word-spacing: -0.5em;
+  vertical-align: bottom;
+}
+#sub1 ul li {
+  word-spacing: 0;
+  margin: 20px 0;
+  width: 33.3%;
+  text-align: center;
+  vertical-align: bottom;
+}
+#sub1 ul li:not(:last-child) {
+  border-right: 1px solid #dfdfdf;
+}
+#sub1 ul li img {
+  display: inline-block;
+  width: 200px;
+  height: 180px;
+}
+#sub1 ul li h2,
+#sub1 ul li h3 {
+  font-size: 1.2rem;
+}
+#sub1 ul li h3 {
   color: #5B5B5B;
 }
 .module {
@@ -146,10 +181,7 @@ header #title {
   height: 8rem;
   width: 8rem;
   border: 1px #FFB832 solid;
-  margin-left: 13rem;
-}
-.module .module_content .head_text {
-  margin-right: 2rem;
+  margin-left: 12rem;
 }
 .module .module_content .head_img img {
   width: 100%;
