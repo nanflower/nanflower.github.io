@@ -240,9 +240,6 @@ footer {
 }
 #mbottom {
   text-align: center;
-
-}
-#rbottom {
-  float: right;
-  font-size: 0.8rem;
+  font-family: Merriweather,serif;
+  font-size: 1.3rem;
 }
