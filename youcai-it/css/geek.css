@@ -214,9 +214,11 @@ header #title {
   position: relative;
   top: -8rem;
   left: 5rem;
-  width: 50rem;
+  width: 44rem;
   font-size: 45px;
   color: #fff;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #fff;
 }
 #backtxt span {
   margin-left: 20px;
